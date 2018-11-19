@@ -1,0 +1,16 @@
+package com.Sudeepta;
+
+import javax.ws.rs.container.AsyncResponse;
+
+public class CheckProcessorImpl implements checkProcessor {
+
+	@Override
+	public void processChecks(AsyncResponse response, Checklist checkList) {
+		new Thread() {
+		public void run() {
+			response.resume(true);
+		}
+	}.start();
+	}
+
+}

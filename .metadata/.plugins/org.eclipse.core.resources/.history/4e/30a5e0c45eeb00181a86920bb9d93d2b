@@ -1,0 +1,11 @@
+package com.Sudeepta;
+
+import java.util.List;
+
+public interface PassengerService {
+
+	List<Passenger> getPassengers();
+
+	Passenger addPassenger(Passenger passenger);
+
+}

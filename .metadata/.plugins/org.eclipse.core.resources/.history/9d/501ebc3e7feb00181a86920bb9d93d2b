@@ -1,0 +1,16 @@
+package com.Sudeepta;
+
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+
+public class checkProcessingClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Client newClient = ClientBuilder.newClient();
+		newClient.target("http://localhost:8080/restasync/checkprocessingservice/checks");
+		
+
+	}
+
+}

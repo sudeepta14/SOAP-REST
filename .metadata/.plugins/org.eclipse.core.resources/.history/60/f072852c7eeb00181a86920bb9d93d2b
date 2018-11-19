@@ -1,0 +1,11 @@
+package com.Sudeepta;
+
+public class CheckProcessorImpl implements checkProcessor {
+
+	@Override
+	public Boolean processChecks(Checklist checkList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

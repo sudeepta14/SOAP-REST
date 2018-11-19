@@ -1,0 +1,8 @@
+package com.Sudeepta;
+
+public class Passenger {
+	
+	private int id;
+	private String name;
+	
+}

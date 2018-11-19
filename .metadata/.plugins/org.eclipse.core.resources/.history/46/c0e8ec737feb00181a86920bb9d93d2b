@@ -1,0 +1,22 @@
+package com.Sudeepta;
+
+import javax.ws.rs.client.AsyncInvoker;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+
+public class checkProcessingClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Client newClient = ClientBuilder.newClient();
+		WebTarget target = newClient.target("http://localhost:8080/restasync/services/checkprocessingservice/checks");
+		AsyncInvoker invoker = target.request().async();
+		invoker.post(Entity.entity(new Checklist(), MediaType.APPLICATION_XML), Boolean. )
+		
+
+	}
+
+}

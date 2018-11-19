@@ -1,0 +1,8 @@
+package com.Sudeepta;
+
+import javax.ws.rs.Path;
+
+@Path("/checkprocessingservice")
+public interface checkProcessor {
+	public Boolean processChecks(Checklist checkList);
+}
